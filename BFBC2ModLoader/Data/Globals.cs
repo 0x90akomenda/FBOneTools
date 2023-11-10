@@ -6,9 +6,9 @@ namespace BFBC2ModLoader.Data
     {
         public static string VersionClientNew { get; set; }
         public static string VersionServer { get; set; }
-           
+        public static string ClientType { get; set; } // we need to know if the client is BFBC2 or MOH2010
         public static bool MapUpdatesAvailable { get; set; } = false;
-        public static bool IsClient { get; set; } = true;
+        public static bool IsClient { get; set; } = true; // propably will be replaced with string ClientType
         public static bool HasModMoved { get; set; } = false;
         public static bool HasModBeenUnChecked { get; set; } = false;
 
