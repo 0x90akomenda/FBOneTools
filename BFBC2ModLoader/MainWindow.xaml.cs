@@ -83,9 +83,17 @@ namespace BFBC2ModLoader
 
             if (File.Exists(Environment.CurrentDirectory + @"\BFBC2Game.exe"))
             {
-                Title += " (Client)";
+                Title += " (BFBC2 Client)";
                 Icon = new BitmapImage(new Uri(@"BFBC2ModLoader\Resources\BFBC2ModLoaderC.ico", UriKind.Relative));
-                Globals.IsClient = true;
+                Globals.IsClient = true; // this variable will be deleted beacause we need to know if the client is MOH2010 or BFBC2
+                Globals.ClientType = "BFBC2"; // setting global what game will be modded
+            }
+            else if (File.Exists(Environment.CurrentDirectory + @"\mohmpgame.exe"))
+            {
+                Title += " (MOH2010 Client)";
+                Icon = new BitmapImage(new Uri(@"BFBC2ModLoader\Resources\BFBC2ModLoaderC.ico", UriKind.Relative));
+                Globals.IsClient = true; // this variable will be deleted beacause we need to know if the client is MOH2010 or BFBC2/
+                Globals.ClientType = "MOH2010"; // setting global what game will be modded
             }
             else if (File.Exists(Environment.CurrentDirectory + @"\Frost.Game.Main_Win32_Final.exe"))
             {
