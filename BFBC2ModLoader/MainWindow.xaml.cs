@@ -77,7 +77,7 @@ namespace BFBC2ModLoader
             UIElements.SetElements(txtBoxEventLog, txtBoxModInfo, txtBoxServerInfo, txtBoxMapInfo, dataGridModManager, dataGridServerBrowser, dataGridMapBrowser);            
             Globals.SetSharedVars();
             Dirs.SetSharedVars();
-            Dirs.SetFbrbDirsAndFiles();
+            // Dirs.SetFbrbDirsAndFiles(); // now we need cal methods for the selcted game
 
             Log.Write("Click 'Install Mod' to select the mod you want to install.");
 
@@ -87,6 +87,8 @@ namespace BFBC2ModLoader
                 Icon = new BitmapImage(new Uri(@"BFBC2ModLoader\Resources\BFBC2ModLoaderC.ico", UriKind.Relative));
                 Globals.IsClient = true; // this variable will be deleted beacause we need to know if the client is MOH2010 or BFBC2
                 Globals.ClientType = "BFBC2"; // setting global what game will be modded
+                Dirs.setEnvPathsForBFBC2();
+                Dirs.SetFbrbDirsAndFiles();
             }
             else if (File.Exists(Environment.CurrentDirectory + @"\mohmpgame.exe"))
             {
@@ -94,6 +96,8 @@ namespace BFBC2ModLoader
                 Icon = new BitmapImage(new Uri(@"BFBC2ModLoader\Resources\BFBC2ModLoaderC.ico", UriKind.Relative));
                 Globals.IsClient = true; // this variable will be deleted beacause we need to know if the client is MOH2010 or BFBC2/
                 Globals.ClientType = "MOH2010"; // setting global what game will be modded
+                Dirs.setEnvPathsForMOH();
+                Dirs.SetFbrbDirsAndFilesMOH();
             }
             else if (File.Exists(Environment.CurrentDirectory + @"\Frost.Game.Main_Win32_Final.exe"))
             {
