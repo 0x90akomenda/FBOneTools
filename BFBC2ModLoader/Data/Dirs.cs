@@ -25,16 +25,16 @@ namespace BFBC2ModLoader.Data
         public static string ScriptFbrb { get; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Scripts\fbrb.pyw";
         public static string ServerInfo { get; } = Environment.CurrentDirectory + @"\serverInfo.txt";
         public static string TempServer { get; } = Environment.CurrentDirectory + @"\tempServer.txt";
-        public static string ModsCommon { get; } = Environment.CurrentDirectory + @"\package\mods";
-        public static string LevelsPathPackage { get; private set; } = Environment.CurrentDirectory + @"\package\levels";
+        public static string ModsCommon { get; private set; } // different path for BFBC2 and MOH2010 the value of this variable should depend on the value of the ClientType
+        public static string LevelsPathPackage { get; private set; } // different path for BFBC2 and MOH2010 the value of this variable should depend on the value of the ClientType
         public static string LevelsPathDist { get; } = Environment.CurrentDirectory + @"\dist\win32\levels";
         public static string StartupPath { get; } = Environment.CurrentDirectory;
         public static string MftRoot { get; private set; } = Environment.CurrentDirectory + @"\dist\win32\package.mft";
-        public static string MftOriginal { get; private set; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\original\package.mft";
-        public static string MftModded { get; private set; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\modded\package.mft";
+        public static string MftOriginal { get; private set; } // we have two game clients so path should depend on the value of the ClientType
+        public static string MftModded { get; private set; } // we have two game clients so path should depend on the value of the ClientType
         public static string BundleManiRoot { get; private set; } = Environment.CurrentDirectory + @"\dist\win32\bundleManifest";
-        public static string BundleManiOriginal { get; private set; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\original\bundleManifest";
-        public static string BundleManiModded { get; private set; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\modded\bundleManifest";
+        public static string BundleManiOriginal { get; private set; }  // we have two game clients so path should depend on the value of the ClientType
+        public static string BundleManiModded { get; private set; } // we have two game clients so path should depend on the value of the ClientType
         public static string MapZIP { get; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Download\map.zip";
         public static string LogoPng { get; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Resources\Images\logo.png";        
         public static string Logs { get; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Logs";
