@@ -162,16 +162,28 @@
     <Content Include="BFBC2ModLoader\Config\update.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="BFBC2ModLoader\Loader\client\modded\bundleManifest">
+    <Content Include="BFBC2ModLoader\Loader\client\BFBC2\modded\bundleManifest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="BFBC2ModLoader\Loader\client\modded\package.mft">
+    <Content Include="BFBC2ModLoader\Loader\client\BFBC2\modded\package.mft">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="BFBC2ModLoader\Loader\client\original\bundleManifest">
+    <Content Include="BFBC2ModLoader\Loader\client\BFBC2\original\bundleManifest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="BFBC2ModLoader\Loader\client\original\package.mft">
+    <Content Include="BFBC2ModLoader\Loader\client\BFBC2\original\package.mft">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BFBC2ModLoader\Loader\client\MOH2010\modded\bundleManifest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BFBC2ModLoader\Loader\client\MOH2010\modded\package.mft">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BFBC2ModLoader\Loader\client\MOH2010\original\bundleManifest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BFBC2ModLoader\Loader\client\MOH2010\original\package.mft">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="BFBC2ModLoader\Loader\server\modded\bundleManifest">
