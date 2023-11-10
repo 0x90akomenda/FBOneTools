@@ -150,6 +150,16 @@ namespace BFBC2ModLoader.Data
             FbrbFiles.Add("fonts_sd_jp-00.fbrb", Environment.CurrentDirectory + @"\package\mods\fonts_sd_jp-00.fbrb");
         }
 
+        public static void SetFbrbDirsAndFilesMOH()
+        {
+            // dirs for levels
+            FbrbDirs.Add(@"mp_002\level-00 FbRB", Environment.CurrentDirectory + @"\dist\win32\patch\mods\mp_002\level-00 FbRB");
+            FbrbDirs.Add("mainmenu-00 FbRB", Environment.CurrentDirectory + @"\dist\win32\patch\mods\mainmenu-00 FbRB");
+
+            FbrbFiles.Add(@"mp_002\level-00.fbrb", Environment.CurrentDirectory + @"\dist\win32\patch\mods\mp_002\level-00.fbrb");
+            FbrbFiles.Add("mainmenu-00.fbrb", Environment.CurrentDirectory + @"\dist\win32\patch\mods\mainmenu-00.fbrb");
+        }
+
         public static void SwitchToServer()
         {
             //Change to server directories
