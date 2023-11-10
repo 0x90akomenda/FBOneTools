@@ -44,7 +44,15 @@ namespace BFBC2ModLoader.Data
         {
             SharedDirs.ErrorLog = Environment.CurrentDirectory + @"\BFBC2ModLoader\Logs\error.log";
         }
-
+        public static void setEnvPathsForMOH()
+        {
+            ModsCommon = Environment.CurrentDirectory + @"\dist\win32\patch\mods";
+            LevelsPathPackage = Environment.CurrentDirectory + @"\dist\win32\patch\levels";
+            MftOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\original\package.mft";
+            MftModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\modded\package.mft";
+            BundleManiOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\original\bundleManifest";
+            BundleManiOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\modded\bundleManifest";
+        }
         public static void SetFbrbDirsAndFiles()
         {
             FbrbDirs.Add("level-00 FbRB", Environment.CurrentDirectory + @"\package\mods\level-00 FbRB");
