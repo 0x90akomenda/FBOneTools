@@ -971,9 +971,14 @@ namespace BFBC2ModLoader
         {
             try
             {
-                if (Globals.IsClient == true)
+                if (Globals.ClientType == "BFBC2")
                 {
                     Process.Start(Dirs.StartupPath + @"\BFBC2Game.exe");
+                    Close();
+                }
+                else if (Globals.ClientType == "MOH2010")
+                {
+                    Process.Start(Dirs.StartupPath + @"\mohmpgame.exe");
                     Close();
                 }
                 else
