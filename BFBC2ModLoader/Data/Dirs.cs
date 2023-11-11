@@ -36,7 +36,7 @@ namespace BFBC2ModLoader.Data
         public static string BundleManiOriginal { get; private set; }  // we have two game clients so path should depend on the value of the ClientType
         public static string BundleManiModded { get; private set; } // we have two game clients so path should depend on the value of the ClientType
         public static string MapZIP { get; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Download\map.zip";
-        public static string LogoPng { get; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Resources\Images\logo.png";        
+        public static string LogoPng { get; private set; } // we also should use different logo images for games
         public static string Logs { get; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Logs";
         public static string Downloads { get; } = Environment.CurrentDirectory + @"\BFBC2ModLoader\Download";
 
@@ -52,7 +52,8 @@ namespace BFBC2ModLoader.Data
             MftModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\BFBC2\modded\package.mft";
             BundleManiOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\BFBC2\original\bundleManifest";
             BundleManiModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\BFBC2\modded\bundleManifest";
-        }
+            LogoPng  = Environment.CurrentDirectory + @"\BFBC2ModLoader\Resources\Images\BFBC2logo.png";
+    }
         public static void setEnvPathsForMOH()
         {
             ModsCommon = Environment.CurrentDirectory + @"\dist\win32\patch\mods";
@@ -61,6 +62,7 @@ namespace BFBC2ModLoader.Data
             MftModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\modded\package.mft";
             BundleManiOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\original\bundleManifest";
             BundleManiModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\modded\bundleManifest";
+            LogoPng = Environment.CurrentDirectory + @"\BFBC2ModLoader\Resources\Images\MOH2010logo.png";
         }
         public static void SetFbrbDirsAndFiles()
         {
