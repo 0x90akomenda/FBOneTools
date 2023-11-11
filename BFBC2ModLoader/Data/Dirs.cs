@@ -51,7 +51,7 @@ namespace BFBC2ModLoader.Data
             MftOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\BFBC2\original\package.mft";
             MftModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\BFBC2\modded\package.mft";
             BundleManiOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\BFBC2\original\bundleManifest";
-            BundleManiOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\BFBC2\modded\bundleManifest";
+            BundleManiModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\BFBC2\modded\bundleManifest";
         }
         public static void setEnvPathsForMOH()
         {
@@ -60,7 +60,7 @@ namespace BFBC2ModLoader.Data
             MftOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\original\package.mft";
             MftModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\modded\package.mft";
             BundleManiOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\original\bundleManifest";
-            BundleManiOriginal = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\modded\bundleManifest";
+            BundleManiModded = Environment.CurrentDirectory + @"\BFBC2ModLoader\Loader\client\MOH2010\modded\bundleManifest";
         }
         public static void SetFbrbDirsAndFiles()
         {
