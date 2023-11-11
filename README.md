@@ -1,3 +1,5 @@
+- Adding support for installing modifications for Medal Of Honor 2010 (BFBC2ModLoader).
+## Original message
 <div align="center">
   <a href="https://github.com/HeicoDev/BFBC2Toolkit">
     <img alt="FBOneTools" width="200" heigth="200" src="https://i.ibb.co/ZJ4Z4sp/Battlefield-Modding-Icon.png">
