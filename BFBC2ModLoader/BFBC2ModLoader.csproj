@@ -259,7 +259,10 @@
     <Content Include="BFBC2ModLoader\Resources\Icons\up.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="BFBC2ModLoader\Resources\Images\logo.png">
+    <Content Include="BFBC2ModLoader\Resources\Images\BFBC2logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BFBC2ModLoader\Resources\Images\MOH2010logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="BFBC2ModLoader\Scripts\fbrb.pyw">
